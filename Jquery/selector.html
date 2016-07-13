@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>selector</title>
+    <script src="js/jquery-1.4.2.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $("#btn").click(function(){
+
+//            var name=document.getElementById("txt");
+//            alert(name.value);
+
+                var  $name=$("#txt");                   //by id
+                $name.css("background","red");
+                //alert($name.val());
+
+                $("div").css("background","red");        //by tagname
+                $(".divclass").css("background","red"); //by class
+
+                $("body div").css("background","blue"); //by tagname
+
+
+                $("#dd").hide(1000);
+                $("#dd1").fadeOut(1000);
+                //$("#dd2").animate({"padding:30"},1000);
+                $("div:contains('haha')").css("background","green");;
+
+            });
+        })
+    </script>
+    <style>
+        #txt{
+            background-color: #f0f0f0;
+            height: 200px;
+            width: 400px;
+            border: 3px darkgreen solid;
+        }
+    </style>
+</head>
+<body>
+
+<input type="text" id="txt"/>
+<input type="button" id="btn" value="click">
+<div name="divname">haha</div>
+<div class="divclass" id="dd0">hahassss</div>
+<div class="divclass" id="dd">hahassss</div>
+<div class="divclass" id="dd1">hahassss</div>
+<div class="divclass" id="dd2">div 2</div>
+</body>
+</html>

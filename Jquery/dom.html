@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dom</title>
+    <script src="js/jquery-1.4.2.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#create").click(function () {
+                $("body").append("<div>i am here</div>");
+                $("#div").remove();
+                $("div").wrap("<font color='aqua'/>");
+                $("div").bind("mouseover",function () {
+                    $(this).css("background-color","red");
+                });
+            });
+        });
+    </script>
+    <style type="text/css">
+        #div{
+            width: 100px;
+            height: 100px;
+            background-color: #dddddd;
+        }
+    </style>
+</head>
+<body>
+<input type="button" value="append" id="create"/>
+<div id="div">
+    <p>remove me</p>
+</div>
+</body>
+</html>

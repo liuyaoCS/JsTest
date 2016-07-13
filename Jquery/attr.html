@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dom</title>
+    <script src="js/jquery-1.4.2.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#test").click(function () {
+
+                // html() text() val() css() height() width()
+                alert( $("#div").text());
+                alert( $("#div").attr("title"));
+            });
+        });
+    </script>
+    <style type="text/css">
+        #div{
+            width: 100px;
+            height: 100px;
+            background-color: #dddddd;
+        }
+    </style>
+</head>
+<body>
+<input type="button" value="attr" id="test"/>
+<div id="div" title="zn">
+    <p>test...</p>
+</div>
+</body>
+</html>
