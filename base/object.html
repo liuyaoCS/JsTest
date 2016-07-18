@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        function Student(name,age){
+            this.name=name;
+            this.age=age;
+            this.speak=function(message){
+                console.log(this.name+":"+message);
+            };
+        }
+        var ly=new Student('ly',30);
+        ly.speak('hello,every one');
+        console.log(ly['age']); //键值对的集合
+        console.log(ly.name);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
