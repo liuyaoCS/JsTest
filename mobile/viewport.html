@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" >
+    <meta name="format-detection" content="telephone=no">
+    <title>中国搜索</title>
+    <style type="text/css">
+        html,body{background:#fff;font-size:14px;font:14px/1 "微软雅黑",helvetica,sans-serif}*{margin:0;padding:0;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;text-decoration:none}img{border:0}a,a:link,a:visited,a:hover,a:active{text-decoration:none;color:#333}ul{list-style:none}i{font-style:normal;font-weight:normal}:focus{outline:0}.clearfix:after{visibility:hidden;display:block;font-size:0;content:" ";clear:both;height:0}h1,h2,h3,h4,h5{font-weight:normal;margin:0;padding:0}.plus_special{position:relative;width:100%;padding-bottom:18.75%;overflow:hidden}.img-box{width:100%;height:100%;position:absolute;top:0;left:0}.img-box img{width:100%;height:100%;background:url(data:image/png;base64,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) no-repeat #f4f7f9 center center;background-size:auto 40%}.plus_hotsearch{padding-top:8px}.hotsearch_tit{padding:0 15px;height:30px;line-height:30px;display:-webkit-box;display:-webkit-flex;display:flex;overflow:hidden}.hotsearch_tit h3{font-size:17px;color:#b4110c}.hotsearch_tit p{-webkit-flex:1;-webkit-box-flex:1;flex:1;margin-left:10px;line-height:35px}.hotsearch_tit p .enter{display:inline-block;padding-right:13px;font-size:12px;color:#2786c8;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAGCSURBVHjarNW/S9VRGMfxlye5TReHFrMamoRWTQ0RWhq7Wf5YcnEIJxed7A+4Y42Bg0KjV0ipNXG8SCFYQoHQoOIsTgViyyPc+/V+r9+4feDAl/M9nzfnOc9zntPVX61roRLGYzxCH/7gCLv4gM2Ya1JqAXuOfcxhG09Qxi08jbm5WPMia+5u+L6BKip4FcasDmIs4zHeYRivcZ7dYTV+DuXAstqOtcPhbQp5Mnb2DGeK6yw8lWBIkYA3mMVpC9NFjDydhvctSglT+Il6jqGrAZynOn5gOkVprF0TWhHoGsYTHmKrwHldB93CYEIvDgsmoR30ELdTVPtN/0kJJ3G1iugis9NG3cVJwl4UaCcwGMWXhA287BAGM9hIqOEBRjqAjQSjdpmURayiJyez7WA9WMECfl/e5Ro+Ro8r/0NSy+H5FIymbrOEb9hpE342zB18D++VfniOeUzgPX5hHZ+jaEu4h7HoLPejD643nU+bJ2AquvcA7sT8Mb7GE1Br9QT8HQAJXFa/LM5Z2gAAAABJRU5ErkJggg==) right center no-repeat;background-size:10px auto}.hotsearch_tit span{font-size:15px;color:#999}.hotsearch-list{padding:0 12px;height:160px}.hotsearch-list li{float:left;width:50%;height:40px;border-bottom:1px solid #eaeaea;line-height:39px;font-size:15px;padding-left:3px;padding-right:5px;box-sizing:border-box;-webkit-box-sizing:border-box;overflow:hidden}.hotsearch-list li a{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;display:inline-block;position:relative;padding-right:13px;box-sizing:border-box;-webkit-box-sizing:border-box;max-width:100%}.hotsearch-list li a[data-type="new"]:after{position:absolute;font-size:11px;color:#b4110c;content:'新';top:4px;right:0;line-height:12px;text-indent:0}.hotsearch-list li a[data-type="hot"]:after{position:absolute;font-size:11px;color:#b4110c;content:'热';top:4px;right:0;line-height:12px;text-indent:0}.hotsearch-list li a.fade{-webkit-transition:opacity .24s ease-out;opacity:0}.hotsearch-list li:nth-child(n+3) a.fade{-webkit-transition-delay:.06s}.hotsearch-list li:nth-child(n+5) a.fade{-webkit-transition-delay:.12s}.hotsearch-list li:nth-child(n+7) a.fade{-webkit-transition-delay:.18s}.hotsearch-list li a.show{-webkit-transition:opacity .24s ease-out .06s;opacity:1}.hotsearch-list li:nth-child(n+3) a.show{-webkit-transition-delay:.06s}.hotsearch-list li:nth-child(n+5) a.show{-webkit-transition-delay:.12s}.hotsearch-list li:nth-child(n+7) a.show{-webkit-transition-delay:.18s}
+    </style>
+</head>
+<body>
+
+<div class="plus_hotsearch">
+    <div class="hotsearch_tit">
+        <h3>实时热搜</h3>
+        <p><a href="http://m.chinaso.com/top.html" class="enter alink" title="国搜风云榜">国搜风云榜</a></p>
+        <span class="change" id="change" data-hotsearch-times="1">换一换</span>
+    </div>
+    <ul class="hotsearch-list clearfix">
+    </ul>
+</div>
+<!--<script src="http://n2.static.pg0.cn/www/common/base/m/js/bridge.js"></script>
+<script src="http://n2.static.pg0.cn/www/common/base/m/js/zepto.min.js"></script>-->
+<script src="http://n2.static.pg0.cn/combine/www/common/base/m/js/bridge.js,www/common/base/m/js/zepto.min.js"></script>
+<script>
+    var chinaso = new Bridge();
+    var app = navigator.userAgent.indexOf("ChinasoClient");
+    if(app != -1){
+        chinaso.ChangeCardHeight($("body").height());
+        $("body").on({
+            tap: function () {
+                var url = $(this).attr("href"),
+                        title = $(this).attr("title"),
+                        action = "";
+                if(url.indexOf('m.chinaso.com/zhuanti/wap') > 0 || url.indexOf('m.news.chinaso.com') > 0){
+                    action = "ShowNews";
+                    if(url.indexOf('m.chinaso.com/zhuanti/wap') > 0){
+                        url = url + "?type=app";
+                    } else {
+                        url = url + "&type=app";
+                    }
+                } else{
+                    action = "ShowWeb";
+                    if(url.indexOf('m.chinaso.com/page/search.htm') > 0){
+                        url = url + "&from=client";
+                    }
+                }
+                chinaso.post({"action":action,"url":url,"title":title});
+            },
+            click: function () {
+                return false;
+            }
+        }, '.alink');
+    }
+    var surl = "http://m.chinaso.com/page/search.htm?keys=",
+            e,e0,o0;
+
+    function set(data){
+        e0 = data.data;
+        e = data.data;
+        var hotsearch = "", linkurl, title;
+        if(e!=null&&e.length > 0 ){
+            for(var i = 0; i < 8;i++){
+                title = e[i].title;
+                linkurl = surl + title;
+                hotsearch +='<li><a href="' + linkurl + '" class="alink" title="' + title + '" ';
+                if (e[i].label && e[i].label === "新") {
+                    hotsearch += 'data-type="new"';
+                } else if (e[i].label && e[i].label === "热") {
+                    hotsearch += 'data-type="hot"';
+                } else {
+                    hotsearch += 'data-type=""';
+                }
+                hotsearch +='>'+title+'</a></li>';
+            }
+            $(".hotsearch-list").html(hotsearch);
+            o0 = parseInt(e0.length / 8);
+        }
+    }
+
+    function a(t, a, n) {
+        var o = null, linkurl, title;
+        // console.log(t);
+        t.each(function(t, r) {
+            o = e0[8 * (a - 1) + t + n];
+            var newicon = "",
+                    title = o.title;
+            linkurl = surl + title;
+            if (o.label && o.label == "新") {
+                newicon = "new";
+            } else if (o.label && o.label == "热") {
+                newicon = "hot";
+            }
+            $(r).attr({"href": linkurl,"data-type": newicon,"title": title}).html(title)
+        }),
+                t.removeClass("fade").addClass("show");
+    }
+    !function n() {
+        var t = $("#change"),
+                u = $("#change i");
+
+        t.on("click", function () {
+            //var type = $("#change").siblings(".cur").attr("data-tit");
+            var n = $(".hotsearch-list li:nth-child(-n+2) a"),
+                    e = $(".hotsearch-list li:nth-child(n+3) a"),
+                    r = $(".hotsearch-list a"),
+                    i = null;
+            if (u.hasClass("rotate")) return !1;
+            clearTimeout(i);
+            i = setTimeout(function () {
+                u.removeClass("rotate");
+            }, 800);
+            o = o0;
+            var s = parseInt(t.attr("data-hotsearch-times"));
+            ++s > o && (s = 1);
+            u.addClass("rotate").one("webkitTransitionEnd", function () {
+                return u.removeClass("rotate"), !1;
+            });
+            // console.log(e);
+            r.eq(1).one("webkitTransitionEnd", function () {
+                return a(n, s, 0), !1;
+            });
+            r.eq(5).one("webkitTransitionEnd", function (t) {
+                var n = $(this);
+                return "opacity" === t.propertyName && (0 === parseInt(n.css("opacity")) ? a(e, s, 2) : (n.off(), r.removeClass())), !1;
+            });
+            r.removeClass("show").addClass("fade");
+            t.attr("data-hotsearch-times", s);
+        });
+    }();
+</script>
+<script>
+    var hotsearch_data = {"data":[
+        {"time":"1468971513000",
+            "mname":"中国搜索",
+            "url":"",
+            "enurl":"AD4021DB9ABCD50D",
+            "title":"习近平参观清真寺",
+            "label":"习近平"}
+        ,                    {"time":"1468979938000",
+            "mname":"中国搜索",
+            "url":"",
+            "enurl":"AD4021DB9ABCD50D",
+            "title":"汛期便民热线",
+            "label":"汛期"}
+        ,                    {"time":"1468970141000",
+            "mname":"中国搜索",
+            "url":"",
+            "enurl":"AD4021DB9ABCD50D",
+            "title":"针对错案反思制度",
+            "label":"反思制度"}
+        ,                    {"time":"1468972276000",
+            "mname":"中国搜索",
+            "url":"",
+            "enurl":"AD4021DB9ABCD50D",
+            "title":"环保钦差啥来头",
+            "label":"环保钦差"}
+        ,                    {"time":"1468971763000",
+            "mname":"中国搜索",
+            "url":"",
+            "enurl":"AD4021DB9ABCD50D",
+            "title":"抗洪并未舍小保大",
+            "label":"抗洪"}
+        ,                    {"time":"1468972128000",
+            "mname":"中国搜索",
+            "url":"",
+            "enurl":"AD4021DB9ABCD50D",
+            "title":"北方暴雨模式",
+            "label":"暴雨模式"}
+        ,                    {"time":"1468971446000",
+            "mname":"中国搜索",
+            "url":"",
+            "enurl":"AD4021DB9ABCD50D",
+            "title":"中宣部推荐哪些书",
+            "label":"推荐"}
+        ,                    {"time":"1468978459000",
+            "mname":"中国搜索",
+            "url":"",
+            "enurl":"AD4021DB9ABCD50D",
+            "title":"周滨白手套获刑",
+            "label":"周滨白手套"}
+        ,                    {"time":"1468973066000",
+            "mname":"中国搜索",
+            "url":"",
+            "enurl":"AD4021DB9ABCD50D",
+            "title":"官场赌徒有哪几类",
+            "label":"官场赌徒"}
+        ,                    {"time":"1468973350000",
+            "mname":"中国搜索",
+            "url":"",
+            "enurl":"AD4021DB9ABCD50D",
+            "title":"里约奥运预测",
+            "label":"里约奥运"}
+        ,                    {"time":"1468970451000",
+            "mname":"中国搜索",
+            "url":"",
+            "enurl":"AD4021DB9ABCD50D",
+            "title":"台大巴爆燃3巧合",
+            "label":"大巴爆燃"}
+        ,                    {"time":"1468973700000",
+            "mname":"中国搜索",
+            "url":"",
+            "enurl":"AD4021DB9ABCD50D",
+            "title":"疫苗断货谁之过",
+            "label":"疫苗"}
+        ,                    {"time":"1468970542000",
+            "mname":"中国搜索",
+            "url":"",
+            "enurl":"AD4021DB9ABCD50D",
+            "title":"土总统述政变惊魂",
+            "label":"政变"}
+        ,                    {"time":"1468972017000",
+            "mname":"中国搜索",
+            "url":"",
+            "enurl":"AD4021DB9ABCD50D",
+            "title":"共和党提名特朗普",
+            "label":"特朗普"}
+        ,                    {"time":"1468979154000",
+            "mname":"中国搜索",
+            "url":"",
+            "enurl":"AD4021DB9ABCD50D",
+            "title":"张艺谋申购集资房",
+            "label":"张艺谋"}
+        ,                    {"time":"1468970191000",
+            "mname":"中国搜索",
+            "url":"",
+            "enurl":"AD4021DB9ABCD50D",
+            "title":"英国爆发2亿老鼠",
+            "label":"老鼠"}
+        ,                    {"time":"1468971866000",
+            "mname":"中国搜索",
+            "url":"",
+            "enurl":"AD4021DB9ABCD50D",
+            "title":"爱国不是糊涂的爱",
+            "label":"爱国"}
+        ,                    {"time":"1468972451000",
+            "mname":"中国搜索",
+            "url":"",
+            "enurl":"AD4021DB9ABCD50D",
+            "title":"蒜你狠卷土重来",
+            "label":"蒜你狠"}
+        ,                    {"time":"1468916048000",
+            "mname":"中国搜索",
+            "url":"",
+            "enurl":"AD4021DB9ABCD50D",
+            "title":"高校学费上涨",
+            "label":"高校学费"}
+        ,                    {"time":"1468916048000",
+            "mname":"中国搜索",
+            "url":"",
+            "enurl":"AD4021DB9ABCD50D",
+            "title":"哈佛女孩刷屏演讲",
+            "label":"哈佛演讲"}
+        ,                    {"time":"1468916048000",
+            "mname":"中国搜索",
+            "url":"",
+            "enurl":"AD4021DB9ABCD50D",
+            "title":"京沪高铁赚60亿",
+            "label":"京沪高铁"}
+        ,                    {"time":"1468916048000",
+            "mname":"中国搜索",
+            "url":"",
+            "enurl":"AD4021DB9ABCD50D",
+            "title":"俄罗斯被逐出奥运",
+            "label":"俄罗斯"}
+        ,                    {"time":"1468916048000",
+            "mname":"中国搜索",
+            "url":"",
+            "enurl":"AD4021DB9ABCD50D",
+            "title":"全国第一天价豪宅",
+            "label":"天价豪宅"}
+        ,                    {"time":"1468929775000",
+            "mname":"中国搜索",
+            "url":"",
+            "enurl":"AD4021DB9ABCD50D",
+            "title":"南部战区五虎上将",
+            "label":"南部战区"}
+        ,                                                                                ]};
+    set(hotsearch_data,"hotsearch");
+</script>
+</body>
+</html>

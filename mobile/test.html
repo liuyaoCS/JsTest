@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--meta:vp-->
+    <meta name="viewport" content="width=device-width">
+    <title>Title</title>
+    <style >
+        body{
+            width: 320px;
+            height: 480px;
+            background-color: #b4110c;
+        }
+    </style>
+
+</head>
+<body >
+    <script type="text/javascript">
+        var screenWidth=window.screen.width;
+        var screenHeight=window.screen.height;
+        var screenAvailWidth=window.screen.availWidth;
+        var screenAvailHeight= window.screen.availHeight;
+
+        var outerWidth=window.outerWidth;
+        var outerHeight=window.outerHeight;
+        var innerWidth=window.innerWidth;
+        var innerHeight=window.innerHeight;
+
+        var htmlWidth=document.documentElement.clientWidth;
+        var htmlHeight=document.documentElement.clientHeight;
+
+        var scrollWidth=document.body.scrollWidth;
+        var scrollHeight=document.body.scrollHeight;
+        var clientWidth=document.body.clientWidth;
+        var clientHeight=document.body.clientHeight;
+
+        var devicePixelRatio=window.devicePixelRatio;
+
+        var str="screenWidth:"+screenWidth+";screenHeight:"+screenHeight+";screenAvailWidth;"+screenAvailWidth+";screenAvailHeight"+screenAvailHeight
+                +";\nouterWidth"+outerWidth+";outerHeight"+outerHeight +";\ninnerWidth"+innerWidth+";innerHeight"+innerHeight
+                +";\nhtmlWidth"+htmlWidth+";htmlHeight"+htmlHeight
+                +";\nscrollWidth"+scrollWidth+";scrollHeight"+scrollHeight+";clientWidth"+clientWidth+";clientHeight"+clientHeight
+                +";\ndevicePixelRatio"+devicePixelRatio;
+
+        alert(str);
+
+    </script>
+</body>
+</html>
