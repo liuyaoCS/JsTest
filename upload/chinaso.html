@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="filetype" content="0" />
+    <meta name="publishedtype" content="1" />
+    <meta name="pagetype" content="2" />
+    <meta name="catalogs" content="C_3296698">
+    <title>国搜识图明星-中国搜索</title>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://m.chinaso.com/static/v2/img/WebIcon-72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://m.chinaso.com/static/v2/img/WebIcon-72@2x.png" />
+    <link rel="stylesheet" href="index.css" />
+    <script type="text/javascript" src="http://n1.static.pg0.cn/mshitu/static/js/zepto.min.js"></script>
+</head>
+<body>
+<!-- 头部搜索 s-->
+<div id="header-top" class="top">
+    <header>
+        <a class="goback" href="javascript:window.history.go(-1);" id="goback">返回</a>
+        <span class="header-title"><a href="http://m.shitu.chinaso.com" id="news-href"></a></span>
+    </header>
+</div>
+<!-- 头部搜索 e-->
+<!-- 导航 s -->
+<nav>
+    <ul>
+        <li class="cur"><a href="http://m.shitu.chinaso.com/mx/index.html">明星</a></li>
+        <li ><a href="http://m.shitu.chinaso.com/qc/index.html">汽车</a></li>
+        <li ><a href="http://m.shitu.chinaso.com/fj/index.html">风景</a></li>
+        <li ><a href="http://m.shitu.chinaso.com/ms/index.html">美食</a></li>
+        <li ><a href="http://m.shitu.chinaso.com/xw/index.html">新闻</a></li>
+
+    </ul>
+</nav>
+<!-- 导航 e -->
+<div class="main-con" id="picB_con">
+    <!-- <div class="con-pic">
+        <a href="#"> <img src="../static/image/temp/index-main.png" /> <span></span> </a><a href="#" class="tag"></a>
+    </div>
+    <div class="con-pic">
+        <a href="#"> <img src="../static/image/temp/index-main.png" /> <span></span> </a><a href="#" class="tag"></a>
+    </div>
+    <div class="con-pic">
+        <a href="#"> <img src="../static/image/temp/index-main.png" /> <span></span> </a><a href="#" class="tag"></a>
+    </div> 		 -->
+</div>
+<div class="loading-more">
+    <a href="javascript:void(0);"><i></i>加载中...</a>
+</div>
+<div style="display:none" class="loading-more end" data-type="loaded"><a href="javascript:void(0);">加载完毕！</a></div>
+<a class="gotop" id="gotop"><i class="icon"></i></a>
+<form  method="post" enctype="multipart/form-data" id="from1" >
+    <a class="shitu" id="shitu"></a><input type="file" class="file" name="file" id="file" style="">
+</form>
+<footer>
+    <p class="link"> <a href="http://www.chinaso.com/index.html?path=www">传统版</a>|<span class="cur">触屏版</span>|<a href="http://m.chinaso.com/download.html">客户端</a> </p>
+    <p class="copy"> ©2015 中国搜索 京ICP备：14006318号 </p>
+</footer>
+<script type="text/javascript" src="http://n1.static.pg0.cn/mshitu/static/js/index.js"></script>
+<div style="display:none">
+    <script type="text/javascript">document.write(unescape("%3Cscript src='http://stat.chinaso.com/webdig.js?z=1' type='text/javascript'%3E%3C/script%3E"));</script>
+    <script type="text/javascript">wd_paramtracker("_wdxid=000000000000000000000000000000000000000000")</script>
+</div>
+<script type="text/javascript">
+    var jsonPath = 'http://shitu.chinaso.com/index.php/Home/IndexApp/indeximagejsonp?size=10&callback=jsonpCallback&page=';
+    var loadMore = new LoadMore("picB_con", ".loading-more", 4,jsonPath);
+    loadMore.init();
+</script>
+</body>
+</html>

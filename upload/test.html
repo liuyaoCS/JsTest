@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Title</title>
+    <script type="text/javascript" src="http://n1.static.pg0.cn/mshitu/static/js/zepto.min.js"></script>
+    <style type="text/css">
+        .shitu{
+            display:block;
+            background: url("./upload.png");
+            width:44px;
+            height:44px
+        }
+        /*#upload-file{*/
+            /*display: none;*/
+        /*}*/
+        #file{
+            display: none;
+        }
+
+
+    </style>
+</head>
+<body>
+
+
+
+<form  method="post" enctype="multipart/form-data" id="from1" >
+    <a class="shitu" id="shitu" ></a>
+    <input type="file"  id="file" >
+</form>
+
+<script type="text/javascript">
+
+    $("#shitu").click(function(){
+        //alert("1");
+        $("#file").click();
+        //alert("2");
+    });
+
+    $("#file").on("change",
+            function(){
+                //alert("3");
+                document.getElementById("from1").action="http://shitu.chinaso.com/index.php/Home/ClassifiyApp/upload";
+                //alert("4");
+                document.getElementById("from1").submit();
+                //alert("5");
+            });
+
+</script>
+</body>
+</html>
